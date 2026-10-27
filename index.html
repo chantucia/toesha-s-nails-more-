@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#21151b">
+<title>Toesha’s Nails & More</title>
+<style>
+:root{--bg:#160f13;--panel:#24181f;--pink:#f06a9c;--rose:#c64c7c;--cream:#fff1f4;--muted:#d7bdc7;--gold:#d9b779}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(145deg,#100b0f,#2b1722 60%,#120c10);color:var(--cream);font-family:Arial,Helvetica,sans-serif}
+header{padding:28px 18px 22px;text-align:center;border-bottom:1px solid #704052;background:radial-gradient(ellipse at top,#633047 0%,transparent 68%)}
+.logo{font-family:Georgia,serif;font-style:italic;font-size:clamp(2.2rem,8vw,4rem);color:#ff91bb;text-shadow:0 2px 0 #722846,0 0 22px #d3427b;margin:4px 0}
+.sub{letter-spacing:.28em;font-size:.8rem;color:#fff0f4;text-transform:uppercase}
+.tag{color:var(--muted);margin:12px auto 0;max-width:520px;line-height:1.5}
+nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:14px}
+nav a{color:var(--cream);text-decoration:none;border:1px solid #754458;border-radius:99px;padding:9px 14px;font-size:.9rem}
+main{max-width:1000px;margin:auto;padding:16px}
+.hero{background:linear-gradient(120deg,#452231,#1d141a);border:1px solid #704052;border-radius:22px;padding:25px 20px;margin:8px 0 22px}
+h1,h2{font-family:Georgia,serif;font-weight:normal}h1{font-size:clamp(1.7rem,5vw,2.5rem);margin:0 0 10px}.hero p{line-height:1.6;color:var(--muted)}
+.btn{display:inline-block;background:linear-gradient(100deg,#ff8ab6,#d64c83);color:#230e18;font-weight:bold;border:0;border-radius:999px;padding:13px 20px;text-decoration:none;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:rgba(36,24,31,.94);border:1px solid #674052;border-radius:18px;padding:18px}
+.card h2{margin:0 0 12px;color:#ff9fc2;font-size:1.45rem}
+.service{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid #4b303d;line-height:1.35}.service:last-child{border:0}.price{white-space:nowrap;color:#ffd4e3;font-weight:bold}
+label{display:block;margin:14px 0 6px;color:#f9dce7;font-size:.93rem}
+input,select,textarea{width:100%;border-radius:10px;border:1px solid #755063;background:#160f13;color:#fff1f4;padding:12px;font:inherit}
+input:focus,select:focus{outline:2px solid #f06a9c}
+small,.muted{color:var(--muted);line-height:1.5}
+.total{display:flex;justify-content:space-between;gap:12px;background:#3b2230;padding:13px;border-radius:12px;margin:15px 0;color:#fff}
+.notice{border-left:3px solid var(--gold);padding:10px 12px;background:#30212a;color:#e9d4dd;line-height:1.5;border-radius:0 8px 8px 0;font-size:.9rem}
+footer{text-align:center;padding:28px 18px 40px;color:var(--muted);line-height:1.8}
+footer a{color:#ff9fc2}
+@media(min-width:760px){.booking{grid-column:span 2}.booking form{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.booking .full{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Toesha’s</div>
+  <div class="sub">Nails &amp; More</div>
+  <p class="tag">Nails · Pedicure · Manicure · Waxen · Beauty<br>Jouw moment om te stralen ✨</p>
+</header>
+<nav><a href="#behandelingen">Behandelingen & prijzen</a><a href="#boeken">Afspraak maken</a><a href="#contact">Contact</a></nav>
+<main>
+<section class="hero">
+  <h1>Welkom bij Toesha’s Nails &amp; More 💗</h1>
+  <p>Boek eenvoudig jouw beautybehandeling in Wanica. Kies een behandeling en een gewenste datum en tijd. Je boekingsaanvraag wordt via WhatsApp naar ons gestuurd; je afspraak is pas definitief na bevestiging.</p>
+  <a class="btn" href="#boeken">Boek een afspraak</a>
+</section>
+<section id="behandelingen" class="grid">
+  <article class="card">
+    <h2>💅 Nails</h2>
+    <div class="service"><span>Gellak – handen</span><span class="price">SRD 375</span></div>
+    <div class="service"><span>Gellak – tenen</span><span class="price">SRD 375</span></div>
+    <div class="service"><span>BIAB op natuurlijke nagels</span><span class="price">SRD 400</span></div>
+    <div class="service"><span>BIAB met verlenging</span><span class="price">SRD 600</span></div>
+    <div class="service"><span>Manicure</span><span class="price">SRD 450</span></div>
+    <div class="service"><span>Gelly Bad</span><span class="price">SRD 600</span></div>
+  </article>
+  <article class="card">
+    <h2>🦶 Pedicure</h2>
+    <div class="service"><span>Pedicure dames</span><span class="price">SRD 550</span></div>
+    <div class="service"><span>Gellak toevoegen aan pedicure</span><span class="price">SRD 150</span></div>
+    <div class="service"><span>Pedicure heren</span><span class="price">SRD 650</span></div>
+    <div class="service"><span>Kids pedicure</span><span class="price">SRD 300</span></div>
+  </article>
+  <article class="card">
+    <h2>✨ Beauty</h2>
+    <div class="service"><span>Waxen – oksels</span><span class="price">SRD 200</span></div>
+    <div class="service"><span>Waxen – hele benen</span><span class="price">SRD 500</span></div>
+    <div class="service"><span>Epileren</span><span class="price">SRD 100</span></div>
+    <div class="service"><span>Wenkbrauwen tekenen</span><span class="price">SRD 50</span></div>
+    <div class="service"><span>Cluster lashes</span><span class="price">SRD 250</span></div>
+  </article>
+</section>
+<section id="boeken" class="card booking" style="margin-top:16px">
+  <h2>📅 Afspraak aanvragen</h2>
+  <p class="muted">Een account is niet verplicht. Vul je gegevens in en verstuur je aanvraag via WhatsApp.</p>
+  <form id="bookingForm">
+    <div><label for="name">Naam *</label><input id="name" required placeholder="Je naam"></div>
+    <div><label for="phone">Telefoonnummer *</label><input id="phone" required type="tel" placeholder="Je telefoonnummer"></div>
+    <div><label for="service">Behandeling *</label><select id="service" required><option value="">Kies een behandeling</option></select></div>
+    <div><label for="date">Gewenste datum *</label><input id="date" type="date" required></div>
+    <div><label for="time">Gewenste tijd *</label><select id="time" required><option value="">Kies een tijd</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option></select></div>
+    <div><label for="account">Account</label><select id="account"><option>Ik boek zonder account</option><option>Ik wil later een account aanmaken</option></select></div>
+    <div class="full"><label for="notes">Extra wensen (optioneel)</label><textarea id="notes" rows="3" placeholder="Bijvoorbeeld: gewenste nail art"></textarea></div>
+    <div class="full total"><span>Vermelde aanbetaling</span><strong>SRD 200</strong></div>
+    <div class="full notice">De aanbetaling van SRD 200 wordt voorlopig via WhatsApp geregeld. Verstuur je aanvraag en wacht op bevestiging en betaalinstructies. Je afspraak is nog niet bevestigd door alleen dit formulier te versturen.</div>
+    <div class="full" style="margin-top:16px"><button class="btn" type="submit">Verstuur boekingsaanvraag via WhatsApp</button></div>
+  </form>
+</section>
+<section id="contact" class="card" style="margin-top:16px">
+  <h2>📍 Contact & locatie</h2>
+  <p><strong>WhatsApp / bellen:</strong> <a style="color:#ff9fc2" href="https://wa.me/5978949039">8949039</a></p>
+  <p><strong>Adres:</strong> Magentakanaal no. 70a, naast Ezec Jewels, Wanica, Suriname.</p>
+  <a class="btn" href="https://wa.me/5978949039?text=Hallo%20Toesha%27s%20Nails%20%26%20More%2C%20ik%20heb%20een%20vraag.">Stuur een WhatsApp</a>
+</section>
+</main>
+<footer>Toesha’s Nails &amp; More<br>Beauty · Care · You<br><small>Voorbeeldversie — online boekingen, accounts en betalingen moeten nog verder worden ingericht.</small></footer>
+<script>
+const prices = {
+"Gellak – handen":375,"Gellak – tenen":375,"BIAB op natuurlijke nagels":400,
+"BIAB met verlenging":600,"Manicure":450,"Gelly Bad":600,
+"Pedicure dames":550,"Gellak toevoegen aan pedicure":150,"Pedicure heren":650,
+"Kids pedicure":300,"Waxen – oksels":200,"Waxen – hele benen":500,
+"Epileren":100,"Wenkbrauwen tekenen":50,"Cluster lashes":250
+};
+const select=document.getElementById('service');
+Object.entries(prices).forEach(([name,price])=>{const o=document.createElement('option');o.value=name;o.textContent=`${name} — SRD ${price}`;select.appendChild(o)});
+const date=document.getElementById('date');const today=new Date();date.min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+document.getElementById('bookingForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim(), phone=document.getElementById('phone').value.trim(), service=select.value, day=date.value, time=document.getElementById('time').value, notes=document.getElementById('notes').value.trim();
+ const msg=`Hallo Toesha’s Nails & More! Ik wil graag een afspraak aanvragen.\nNaam: ${name}\nTelefoon: ${phone}\nBehandeling: ${service} (SRD ${prices[service]})\nGewenste datum: ${day}\nGewenste tijd: ${time}\nAanbetaling: SRD 200 (graag betaalinstructies sturen)\nExtra wensen: ${notes||'Geen'}\nIk begrijp dat mijn afspraak pas definitief is na bevestiging.`;
+ window.open('https://wa.me/5978949039?text='+encodeURIComponent(msg),'_blank');
+});
+</script>
+</body>
+</html>
