@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toesha's Nails & More</title>
+<style>
+:root{--pink:#ff4fa3;--black:#100b10;--light:#fff0f7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--black);color:white;font-family:Arial,sans-serif}
+header{text-align:center;padding:35px 15px;background:linear-gradient(135deg,#170d17,#5b123c)}
+.logo{font-size:42px;color:#ff8bc2}
+h1{color:#ff80bd;font-size:32px;margin:8px}
+header p{color:#ffe0ef}
+nav{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:15px;background:#090609}
+nav a{color:#ff8bc2;text-decoration:none;font-weight:bold}
+.hero{text-align:center;padding:65px 20px;background:linear-gradient(#170d17dd,#170d17dd),radial-gradient(circle at center,#a52b70,#100b10)}
+.hero h2{font-size:34px;color:#ff80bd}
+.hero p{line-height:1.6}
+.btn{display:inline-block;background:var(--pink);color:#160914;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:bold;margin:10px}
+section{padding:35px 18px;max-width:900px;margin:auto}
+h2{color:#ff80bd;text-align:center}
+.intro{text-align:center;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.item{background:#21151f;border:1px solid #783052;border-radius:12px;padding:17px}
+.item strong{color:#ff91c6}
+.price{float:right;color:#ff91c6;font-weight:bold}
+form{display:grid;gap:12px}
+input,select,textarea{width:100%;padding:13px;border-radius:8px;border:1px solid #ff80bd;background:#21151f;color:white;font-size:16px}
+label{color:#ffd4e8}
+.payment{background:#21151f;padding:20px;border-radius:12px;line-height:1.8}
+footer{text-align:center;background:#080608;padding:30px;color:#ffd4e8}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">♛</div>
+<h1>Toesha's Nails & More</h1>
+<p>Beauty • Elegance • Selfcare</p>
+</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#behandelingen">Behandelingen</a>
+<a href="#afspraak">Afspraak</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="hero" id="home">
+<h2>Welcome to Toesha's Nails & More</h2>
+<p>Verwen jezelf met mooie nagels en persoonlijke verzorging.<br>Jouw beauty, onze passie!</p>
+<a class="btn" href="#afspraak">Boek je afspraak 💗</a>
+</div>
+<section>
+<h2>Welkom bij onze salon</h2>
+<p class="intro">Bij Toesha's Nails & More draait alles om schoonheid, verzorging en zelfvertrouwen. We kijken ernaar uit je te verwelkomen!</p>
+</section>
+<section id="behandelingen">
+<h2>Onze behandelingen & prijzen</h2>
+<div class="grid">
+<div class="item">Gellak – handen <span class="price">SRD 375</span></div>
+<div class="item">Gellak – tenen <span class="price">SRD 375</span></div>
+<div class="item">BIAB op natuurlijke nagels <span class="price">SRD 400</span></div>
+<div class="item">BIAB met verlenging <span class="price">SRD 600</span></div>
+<div class="item">Manicure <span class="price">SRD 450</span></div>
+<div class="item">Gelly Bad <span class="price">SRD 600</span></div>
+<div class="item">Pedicure dames <span class="price">SRD 550</span></div>
+<div class="item">Gellak toevoegen aan pedicure <span class="price">SRD 150</span></div>
+<div class="item">Pedicure heren <span class="price">SRD 650</span></div>
+<div class="item">Kids pedicure <span class="price">SRD 300</span></div>
+<div class="item">Waxen – oksels <span class="price">SRD 200</span></div>
+<div class="item">Waxen – hele benen <span class="price">SRD 500</span></div>
+<div class="item">Epileren <span class="price">SRD 100</span></div>
+<div class="item">Wenkbrauwen tekenen <span class="price">SRD 50</span></div>
+<div class="item">Cluster lashes <span class="price">SRD 250</span></div>
+</div>
+</section>
+<section id="afspraak">
+<h2>Boek je afspraak 💗</h2>
+<p class="intro">Vul je gegevens in. Je aanvraag wordt via WhatsApp verstuurd.</p>
+<form id="booking">
+<label>Je naam</label>
+<input id="naam" required placeholder="Volledige naam">
+<label>Telefoonnummer</label>
+<input id="telefoon" required placeholder="Je telefoonnummer">
+<label>Behandeling</label>
+<select id="behandeling" required>
+<option value="">Kies een behandeling</option>
+<option>Gellak – handen (SRD 375)</option>
+<option>Gellak – tenen (SRD 375)</option>
+<option>BIAB op natuurlijke nagels (SRD 400)</option>
+<option>BIAB met verlenging (SRD 600)</option>
+<option>Manicure (SRD 450)</option>
+<option>Gelly Bad (SRD 600)</option>
+<option>Pedicure dames (SRD 550)</option>
+<option>Gellak toevoegen aan pedicure (SRD 150)</option>
+<option>Pedicure heren (SRD 650)</option>
+<option>Kids pedicure (SRD 300)</option>
+<option>Waxen – oksels (SRD 200)</option>
+<option>Waxen – hele benen (SRD 500)</option>
+<option>Epileren (SRD 100)</option>
+<option>Wenkbrauwen tekenen (SRD 50)</option>
+<option>Cluster lashes (SRD 250)</option>
+</select>
+<label>Gewenste datum</label>
+<input id="datum" type="date" required>
+<label>Gewenste tijd</label>
+<input id="tijd" type="time" required>
+<label>Extra informatie</label>
+<textarea id="extra" placeholder="Eventuele opmerkingen"></textarea>
+<button class="btn" type="submit">Verstuur afspraak via WhatsApp</button>
+</form>
+</section>
+<section>
+<h2>Betalingsinformatie</h2>
+<div class="payment">
+Bank: Fina Bank<br>
+Rekeninghouder: Sheronne Wijnstijn<br>
+Rekeningnummer: 1001615398<br>
+Aanbetaling: SRD 200<br>
+Stuur je betalingsbewijs via WhatsApp.
+</div>
+</section>
+<section id="contact">
+<h2>Contact & locatie</h2>
+<p class="intro">WhatsApp: 8949039<br>Magentakanaal no. 70a, naast Ezec Jewels, Wanica, Suriname</p>
+<p class="intro"><a class="btn" href="https://wa.me/5978949039">Chat met ons via WhatsApp</a></p>
+</section>
+<footer>
+<p>© 2026 Toesha's Nails & More</p>
+<p>Thank you for choosing us! 💗</p>
+</footer>
+<script>
+document.getElementById("booking").addEventListener("submit",function(e){
+e.preventDefault();
+const msg="Hallo Toesha's Nails & More! Ik wil graag een afspraak aanvragen.%0ANaam: "+encodeURIComponent(document.getElementById("naam").value)+"%0ATelefoon: "+encodeURIComponent(document.getElementById("telefoon").value)+"%0ABehandeling: "+encodeURIComponent(document.getElementById("behandeling").value)+"%0ADatum: "+encodeURIComponent(document.getElementById("datum").value)+"%0ATijd: "+encodeURIComponent(document.getElementById("tijd").value)+"%0AExtra: "+encodeURIComponent(document.getElementById("extra").value);
+window.location.href="https://wa.me/5978949039?text="+msg;
+});
+</script>
+</body>
+</html>
