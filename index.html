@@ -130,35 +130,7 @@ Stuur je betalingsbewijs via WhatsApp.
 <p>Thank you for choosing us! 💗</p>
 </footer>
 <script>
-document.getElementById("booking").addEventListener("submit",function(e){
-e.preventDefault();
-const msg="Hallo Toesha's Nails & More! Ik wil graag een afspraak aanvragen.%0ANaam: "+encodeURIComponent(document.getElementById("naam").value)+"%0ATelefoon: "+encodeURIComponent(document.getElementById("telefoon").value)+"%0ABehandeling: "+encodeURIComponent(document.getElementById("behandeling").value)+"%0ADatum: "+encodeURIComponent(document.getElementById("datum").value)+"%0ATijd: "+encodeURIComponent(document.getElementById("tijd").value)+"%0AExtra: "+encodeURIComponent(document.getElementById("extra").value);
-window.location.href="https://wa.me/5978949039?text="+msg;
-});
-<script>
-document.getElementById("booking").addEventListener("submit", function(e) {
-  e.preventDefault();
 
-  const naam = document.getElementById("naam").value;
-  const telefoon = document.getElementById("telefoon").value;
-  const behandeling = document.getElementById("behandeling").value;
-  const datum = document.getElementById("datum").value;
-  const tijd = document.getElementById("tijd").value;
-  const extra = document.getElementById("extra").value;
-
-  const bericht =
-    "Hallo Toesha's Nails & More!\n" +
-    "Ik wil graag een afspraak aanvragen.\n\n" +
-    "Naam: " + naam + "\n" +
-    "Telefoon: " + telefoon + "\n" +
-    "Behandeling: " + behandeling + "\n" +
-    "Datum: " + datum + "\n" +
-    "Tijd: " + tijd + "\n" +
-    "Extra informatie: " + extra;
-
-  window.location.href =
-    "https://wa.me/5978949039?text=" + encodeURIComponent(bericht);
-});
 </script>
 </body>
 </html>
